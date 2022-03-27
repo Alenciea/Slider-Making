@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600display=swap');
+html,
+body {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    min-width: 100vh;
+    font-size: 12px;
+    font-family: 'poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider-container {
+    width: 1920px;
+    height: 979px;
+    position: relative;
+    overflow: hidden;
+}
+
+#back {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    background-color: #eee;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(#091921, 0.05);
+    border-radius: 100%;
+    font-size: 60px;
+    line-height: 120px;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    top: calc(50% - 15px);
+}
+
+#next {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    display: flex;
+    background-color: #eee;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(#091921, 0.05);
+    border-radius: 100%;
+    font-size: 60px;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(100% - 15px);
+}
+
+#back {
+    left: -55px;
+}
+
+#next {
+    left: 1850px;
+}
+
+#slider {
+    width: fit-content;
+    display: flex;
+    height: 400px;
+    position: relative;
+    left: 0;
+    transition: .5s all ease;
+}
+
+.slide {
+    width: 1920px;
+    height: 978px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: arial;
+    font-weight: bold;
+}
